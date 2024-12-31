@@ -16,9 +16,6 @@ public class palindrome {
     }
 
     public static boolean palin(int n){
-        if(n == rev(n)){
-            return true;
-        }
-        return false;
+      return n == rev(n);
     }
 }
