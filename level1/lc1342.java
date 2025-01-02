@@ -3,23 +3,17 @@ public class lc1342 {
         System.out.println(numberOfSteps(123));
     }
 
-    static boolean isEven(int num){
-        return (num%2 == 0);
-    }
-    static int count = 0;
+  
     static int numberOfSteps(int num){
+       return helper(num , 0);
+    }
+    static int helper(int num, int steps){
         if(num == 0){
-            return 0;
+            return steps;
         }
-        
-        if(isEven(num)){
-            count++ ;
-            numberOfSteps(num/2);
+        if(num%2 == 0){
+            return helper(num/2, steps+1);
         }
-        else{
-            count++;
-            numberOfSteps(num-1);
-        }
-        return count;
+        return helper(num - 1, steps+1);
     }
 }
