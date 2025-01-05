@@ -18,6 +18,8 @@ public class arrayList {
         if(index == arr.length){
             return list;
         }
+
+        // different reference varaible pointing to the same object
         if(arr[index] == target){
              list.add(index);
         }
@@ -25,6 +27,8 @@ public class arrayList {
 
     }
 
+
+    //
     public static ArrayList<Integer> findAllIndex2(int[] arr, int target, int index){
         
         ArrayList<Integer> list = new ArrayList<>();
@@ -33,6 +37,8 @@ public class arrayList {
             return list;
         }
 
+
+        //only this will contain the ans for that function call ............≥≤≥≤≥≤≥ 
         if(arr[index] == target){
             list.add(index);
         }
