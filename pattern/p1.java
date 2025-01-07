@@ -11,14 +11,14 @@ public class p1 {
         }
         
         if(c<r){
-            System.out.print("*");
             printTriangle(r, c+1);
+            System.out.print("*");
         }
         else{
-            System.out.println();
             printTriangle(r-1, 0);
+            System.out.println();
         }
     }
-
+ 
 
 }
