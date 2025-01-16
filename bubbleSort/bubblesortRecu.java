@@ -1,10 +1,10 @@
+import java.util.Arrays;
 
-
-public class bubbleSortRec {
+public class bubblesortRecu {
     public static void main (String[] args){
 int[] arr = {1,4,2,5,3};
-bubbleSort(arr);
-sys
+bubbleSort(arr, arr.length -1, 0);
+System.out.println(Arrays.toString(arr));
     }
 
     static void bubbleSort(int[] arr, int r , int c){
@@ -13,11 +13,11 @@ sys
         }
 
         if(c<r){
-            swap(int[] arr, r,c);
-            bubbleSort(int[] arr ,r,c+1);
+            swap( arr, r,c);
+            bubbleSort( arr ,r,c+1);
         }
         else{
-            bubbleSort(int[] arr, r-1, 0);
+            bubbleSort( arr, r-1, 0);
         }
     }
 
