@@ -14,6 +14,7 @@ public class mergesort {
         }
         
         int mid = arr.length /2;
-        int[] left =  Arrays.copyOfRange()
+        int[] left =  Arrays.copyOfRange(int[] arr, 0 mid);
+        int[] left =  Arrays.copyOfRange();
     }
 }
