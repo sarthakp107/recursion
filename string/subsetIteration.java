@@ -2,7 +2,7 @@
 
 public class subsetIteration {
     public static void main(String[] args) {
-        
+        permutation("", "abc");
     } 
 
     public static void permutation(String p , String up){
