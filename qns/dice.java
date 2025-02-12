@@ -1,16 +1,21 @@
+
+import java.util.ArrayList;
+
 public class dice {
     public static void main(String[] args) {
-        dicefnc("", 4);
+        System.out.println(dicefnc("", 4));
     }
 
-    public static void dicefnc(String p , int target){
+    public static ArrayList<String> dicefnc(String p, int target){
         if(target == 0){
-            System.out.println(p);
-            return;
+            ArrayList<String> ans = new ArrayList<>();
+            ans.add(p);
+            return ans;
         }
-
-        for(int i = 1 ;  i <= target ; i++ ){
-            dicefnc(p + i, target - i);
+        ArrayList<String> list = new ArrayList<>();
+        for(int i = 1 ; i<=target ; i++){
+             list.addAll(dicefnc(p + i, target - i));
         }
+        return list;
     }
 }
