@@ -10,7 +10,7 @@ public class letterCombination {
     }
 
 
-
+// many reference variable one object
     public static ArrayList<String> padret(String p , String up , ArrayList<String> list){
       if(up.isEmpty()){
          list.add(p);
