@@ -1,9 +1,9 @@
 
 public class NQueens {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 3;
         boolean[][] board = new boolean[n][n];
-        queens(board, 0);
+        System.out.println(queens(board, 0));
     }
 
     public static int queens(boolean[][] board, int row) {
